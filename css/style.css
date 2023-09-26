@@ -1,0 +1,262 @@
+:root {
+  --white: #FFFFFF;
+  --bg-btn: #E8A43F;
+  --bt-blue: #2A6BBC;
+  --green: #5AAE37;
+  --text:#717375;
+  --black: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header {
+  height: 750px;
+  position: relative;
+}
+.header .bg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.header .bg img {
+  width: 100%;
+  height: 100%;
+}
+.header .container {
+  padding: 5% 10%;
+}
+.header .container .content {
+  padding-right: 37rem;
+}
+.header .container .content p {
+  margin: 1rem 0px;
+}
+.header .container .content .btn {
+  margin-top: 3rem;
+}
+.header .container .content .btn__node {
+  display: flex;
+  gap: 1rem;
+}
+.header .container .content .btn__node button {
+  color: white;
+  background: var(--bg-btn);
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0px 2rem;
+}
+.header .container .content .btn__node p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .container .content .btn__node p span {
+  display: inline-block;
+}
+.header .container .logo {
+  margin-top: 14rem;
+}
+.header .container .logo img {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  height: 750px;
+}
+.main .bg {
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+.main .bg__left {
+  width: 60%;
+}
+.main .bg__left img {
+  height: 100%;
+  width: 100%;
+}
+.main .bg__right {
+  width: 40%;
+}
+.main .bg__right img {
+  height: 750px;
+  width: 100%;
+}
+.main .container {
+  min-height: 100%;
+  padding: 5% 10%;
+  padding-right: 0;
+  width: 60%;
+  height: auto;
+}
+.main .container p {
+  color: var(--black);
+}
+.main .container .Box {
+  margin-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main .container .Box__item {
+  width: 45%;
+  background-color: var(--white);
+  text-align: center;
+  padding: 2.5rem 0px;
+}
+.main .container .Box__item--price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .Box__item:hover {
+  cursor: pointer;
+  background-color: var(--bt-blue);
+  transition: 0.5s;
+}
+.main .container .Box__item:hover h3 {
+  color: var(--white);
+}
+.main .container .Box__item:hover p {
+  color: var(--white);
+}
+
+.news {
+  position: relative;
+  height: 100vh;
+}
+.news .container {
+  padding: 5% 10%;
+  height: auto;
+}
+.news .container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--green);
+}
+.news .container .NewMain {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.news .container .NewMain .New__left {
+  width: 50%;
+}
+.news .container .NewMain .New__left p {
+  color: var(--text);
+}
+.news .container .NewMain .New__left .NewMain__img img {
+  width: 100%;
+}
+.news .container .NewMain .New__left .NewMain__content {
+  margin-top: 2rem;
+}
+.news .container .NewMain .New__left .NewMain__content--date {
+  display: flex;
+  gap: 10px;
+}
+.news .container .NewMain .New__left .NewMain__content h6 {
+  margin: 1rem 0px;
+  font-size: 1.3rem;
+}
+.news .container .NewMain .New__right {
+  width: 57%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news .container .NewMain .New__right--item {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.news .container .NewMain .New__right--item .NewMain__img {
+  width: 48%;
+}
+.news .container .NewMain .New__right--item .NewMain__img img {
+  width: 100%;
+  height: 100%;
+}
+.news .container .NewMain .New__right--item .NewMain__content {
+  width: 48%;
+}
+.news .container .NewMain .New__right--item .NewMain__content--date {
+  display: flex;
+  gap: 10px;
+}
+.news .container .NewMain .New__right--item .NewMain__content h6 {
+  margin: 1rem 0px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.news .container .NewMain .New__right p {
+  color: var(--text);
+}
+.news .btn {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.news .btn button {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #2A6BBC;
+  border: 0px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.news .btn button img {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
